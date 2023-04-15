@@ -7,8 +7,6 @@ from spotipy import SpotifyOAuth
 from dotenv import load_dotenv
 from datetime import datetime
 
-print("[%s] %s" % (datetime.now(), "starting playlist editr ..."))
-
 
 def update_playlist():
     load_dotenv()
@@ -47,6 +45,8 @@ def update_playlist():
 
     print("[%s] %s" % (datetime.now(), "playlist updated"))
 
+
+print("[%s] %s" % (datetime.now(), "starting playlist editr ..."))
 
 update_playlist()
 schedule.every(1).minutes.do(update_playlist)
