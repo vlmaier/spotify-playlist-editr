@@ -35,7 +35,7 @@ def update_playlist():
     sp = spotipy.Spotify(auth=token['access_token'])
 
     pl_id = os.getenv('PLAYLIST_ID')
-    pl_title = os.getenv('PLAYLIST_NAME')
+    pl_title = os.getenv('PLAYLIST_TITLE')
     pl_description = os.getenv('PLAYLIST_DESCRIPTION')
 
     # ideally 300x300 png file
