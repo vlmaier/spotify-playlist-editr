@@ -1,0 +1,4 @@
+schedule~=1.2.0
+django-scheduler~=0.10.1
+spotipy~=2.23.0
+python-dotenv~=1.0.0
